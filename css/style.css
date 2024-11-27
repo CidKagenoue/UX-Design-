@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: #ffffff;
+  width: 90%;
+  max-width: 360px; /* Keeps the container consistent */
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  padding: 30px 25px; /* Increased padding for better alignment */
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Ensures no elements spill outside */
+}
+
+.login-header {
+  margin-bottom: 20px;
+}
+
+.avatar img {
+  width: 70px; /* Slightly smaller avatar for balance */
+  height: 70px;
+  border-radius: 50%;
+  background: #e0f7fa;
+  padding: 5px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #555;
+  margin-top: -5px; /* Subtle spacing adjustment */
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px; /* Added more spacing between inputs */
+}
+
+.input-group input {
+  width: calc(100% - 30px); /* Ensures input stays inside the box */
+  padding: 12px 15px; /* Adjusted for sleeker appearance */
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Smoother edges */
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #00aaff;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.4);
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 18px; /* Adjusted size */
+  opacity: 0.5;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.forgot-password {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  padding: 10px; /* Adjusted padding for sleekness */
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.alternative {
+  font-size: 13px;
+  color: #666;
+  margin: 15px 0 10px; /* Reduced spacing */
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px; /* Added gap for spacing */
+  margin-bottom: 25px; /* Adjusted for balance */
+}
+
+.social-button {
+  flex: 1;
+  padding: 10px 0; /* Adjusted padding for a sleek look */
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px; /* More consistent design */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+
+button {
+  margin-top: 15px; /* Added spacing above the Sign-in button */
+}
+
+.google {
+  background: #db4437;
+}
+
+.github {
+  background: #333;
+}
+
+.twitter {
+  background: #1da1f2;
+}
+.signup-text {
+  font-size: 13px;
+  color: #333;
+}
+
+.signup-text a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}

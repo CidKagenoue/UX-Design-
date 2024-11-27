@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Screen</title>
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <div class="home-container">
+    <header class="header">
+      <div class="profile-container">
+        <img src="images/boycool-profielfoto_946262-2.avif" alt="User Avatar" class="user-avatar">
+        <div class="username" id="welcome-message">Welcome, User</div>
+      </div>
+    </header>
+    <div class="button-container">
+      <div class="menu-card" id="pauseButton">
+        <img src="images/coffee-break.png" alt="Pauze Icon" class="menu-icon">
+        <span class="menu-text">Pauze Keuze</span>
+      </div>
+      <div class="menu-card" id="comfortButton">
+        <img src="images/meditate.png" alt="Comfort Icon" class="menu-icon">
+        <span class="menu-text">Comfort Check</span>
+      </div>
+      <div class="menu-card" id="decibelButton">
+        <img src="images/sound.png" alt="Decibel Icon" class="menu-icon">
+        <span class="menu-text">Decibel Meter</span>
+      </div>
+      <div class="menu-card" id="logoutButton">
+        <img src="images/logout.png" alt="Logout Icon" class="menu-icon">
+        <span class="menu-text">Log Uit</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Display the stored username
+    window.addEventListener("load", function () {
+      const userName = localStorage.getItem("userName") || "User"; // Default to "User" if no name found
+      document.getElementById("welcome-message").textContent = `Welcome, ${userName}`;
+    });
+
+    // Handle logout button
+    document.getElementById("logoutButton").addEventListener("click", function () {
+      localStorage.removeItem("userName"); // Clear username
+      window.location.href = "index.html"; // Redirect to login page
+    });
+  </script>
+</body>
+</html>
+
+
