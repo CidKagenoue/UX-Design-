@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home Control</title>
+  <link rel="stylesheet" href="css/comf.css">
+</head>
+<body>
+  <div class="home-container">
+    <header class="header">
+      <h1 class="title">Comfort keuze</h1>
+    </header>
+
+    <div class="controls-container">
+      <div class="control-card" id="roomControl">
+        <img src="images/door.png" alt="Room Icon" class="control-icon">
+        <span class="control-label">Deur</span>
+      </div>
+      <div class="control-card" id="doorControl">
+        <img src="images/windows.png" alt="Door Icon" class="control-icon">
+        <span class="control-label">Raam</span>
+      </div>
+      <div class="control-card" id="curtainControl">
+        <img src="images/curtains (1).png" alt="Curtain Icon" class="control-icon">
+        <span class="control-label">Gordijn</span>
+      </div>
+      <div class="control-card" id="heatingControl">
+        <img src="images/radiator (1).png" alt="Heating Icon" class="control-icon">
+        <span class="control-label">Verwarming</span>
+      </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button-container">
+      <button class="back-button" onclick="window.location.href='home.html'">
+        &#8592; Back to Home
+      </button>
+    </div>
+
+  </div>
+
+  <script>
+    // Interaction handlers for smart controls (for demonstration)
+    document.getElementById("roomControl").addEventListener("click", function() {
+      alert("Room control toggled!");
+    });
+    document.getElementById("doorControl").addEventListener("click", function() {
+      alert("Door control toggled!");
+    });
+    document.getElementById("curtainControl").addEventListener("click", function() {
+      alert("Curtain control toggled!");
+    });
+    document.getElementById("heatingControl").addEventListener("click", function() {
+      alert("Heating control toggled!");
+    });
+  </script>
+</body>
+</html>
