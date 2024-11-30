@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #4facfe, #00f2fe); /* Smooth gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  .home-container {
+    background: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    backdrop-filter: blur(10px); /* Glassmorphism */
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Wider container for professional look */
+    max-width: 500px;
+    padding: 30px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    min-height: 700px; /* Extended container height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Header Section */
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0077cc;
+    margin-top: 20px;
+  }
+  
+  /* Voting Section */
+  .voting-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .vote-button {
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 40%;
+  }
+  
+  .vote-button:hover {
+    background-color: #0277bd;
+  }
+  
+  /* Chart Section */
+  /* Voting Graph - Bars grow upwards */
+  .chart {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start; /* Align bars to the bottom */
+    height: 300px; /* Adjust height for upward growing bars */
+  }
+  
+  .bar-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 300px; /* Adjust height for upward growing bars */
+  }
+  
+  .bar {
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 10px;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    transition: height 0.3s ease;
+  }
+  
+  .yes-bar {
+    background-color: #0288d1;
+  }
+  
+  .no-bar {
+    background-color: #d32f2f;
+  }
+  
+  /* Voting Section (Below Graph) */
+  .voting-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .vote-button {
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 40%;
+  }
+  
+  .vote-button:hover {
+    background-color: #0277bd;
+  }
+  
+  
+  /* Result Section */
+  .result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Back Button */
+  .back-button {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #0288d1;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #0277bd;
+  }
+  
+  

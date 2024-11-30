@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Break Time Voting</title>
+  <link rel="stylesheet" href="/UX design/css/pauze.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="/UX design/images/boycool-profielfoto_946262-2.avif" alt="User Avatar" class="avatar">
+      <h1>Break Time</h1>
+    </div>
+
+    <!-- Break Time Options -->
+    <div class="break-time-options">
+      <h2>Select your break time:</h2>
+      <ul class="time-list">
+        <li><button class="time-button" onclick="vote('15:30')">15:30</button></li>
+        <li><button class="time-button" onclick="vote('15:35')">15:35</button></li>
+        <li><button class="time-button" onclick="vote('15:40')">15:40</button></li>
+        <li><button class="time-button" onclick="vote('15:45')">15:45</button></li>
+        <li><button class="time-button" onclick="vote('15:50')">15:50</button></li>
+        <li><button class="time-button" onclick="vote('15:55')">15:55</button></li>
+        <!-- Add more times as needed -->
+      </ul>
+    </div>
+
+    <!-- Break Time Result -->
+    <div class="result">
+      <p id="result-message">Please select your break time.</p>
+    </div>
+
+    <!-- Back Button -->
+    <a href="/UX design/html/home.html" class="back-button"> Back </a>
+  </div>
+
+  <script>
+    function vote(time) {
+      document.getElementById('result-message').textContent = `You voted for ${time}. You will be notified once the decision is made.`;
+      setTimeout(() => {
+        alert("Break time will be decided soon!");
+      }, 300);
+    }
+  </script>
+</body>
+</html>
+

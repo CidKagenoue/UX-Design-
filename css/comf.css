@@ -19,7 +19,7 @@ body {
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   width: 90%;
-  max-width: 420px; /* Slightly larger for better spacing */
+  max-width: 500px; /* Slightly larger for better spacing */
   padding: 25px; /* Increased padding for a cleaner look */
   margin: 15px;
   text-align: center;
