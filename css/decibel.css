@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  .home-container {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+    padding: 30px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Header Section */
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0077cc;
+    margin-top: 20px;
+  }
+  
+  /* Decibel Content */
+  .decibel-content {
+    margin-top: 30px;
+  }
+  
+  .decibel-visual {
+    width: 100%;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  .decibel-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    border-radius: 15px;
+    transition: width 0.5s, background-color 0.5s;
+  }
+  
+  .decibel-result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #555;
+  }
+  
+  /* Decibel Information Table */
+  .decibel-info {
+    margin-top: 30px;
+  }
+  
+  .decibel-info table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .decibel-info th, .decibel-info td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .decibel-info th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .decibel-info tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .decibel-info tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Auditorium Button */
+  .auditorium-button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #0288d1;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .auditorium-button:hover {
+    background-color: #0277bd;
+  }
+  
+  /* Back Button */
+  .back-button {
+    margin-top: 10px;
+    padding: 12px 30px;
+    background-color: #0288d1;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #0277bd;
+  }
+  
+  @media (max-width: 600px) {
+    .home-container {
+      width: 360px;
+      margin: 10px;
+      padding: 20px;
+      min-height: 400px;
+    }
+  
+    .avatar {
+      width: 100px;
+      height: 100px;
+    }
+  
+    h1 {
+      font-size: 24px;
+      margin-top: 15px;
+    }
+  
+    .header {
+      margin-bottom: 20px;
+    }
+  
+    .decibel-result {
+      font-size: 20px;
+    }
+  
+    .auditorium-button,
+    .back-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }

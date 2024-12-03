@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decibel Scale</title>
+  <link rel="stylesheet" href="/UX design/css/decibel.css">
+</head>
+<body>
+  <div class="home-container">
+    <header class="header">
+      <img src="/UX design/images/boycool-profielfoto_946262-2.avif" alt="User Avatar" class="avatar">
+      <h1>Decibel Scale</h1>
+    </header>
+
+    <!-- Decibel Scale Content -->
+    <div class="decibel-content">
+      <p>Measure the noise level in your environment.</p>
+      <div class="decibel-visual">
+        <div class="decibel-bar" id="decibel-bar"></div>
+      </div>
+      <div class="decibel-result">
+        <p id="decibel-value">0 dB</p>
+      </div>
+    </div>
+
+    <!-- Decibel Information Table -->
+    <div class="decibel-info">
+      <table>
+        <tr>
+          <th>Decibel Range</th>
+          <th>Impact</th>
+        </tr>
+        <tr>
+          <td>0-30 dB</td>
+          <td>Very quiet, not disturbing</td>
+        </tr>
+        <tr>
+          <td>31-60 dB</td>
+          <td>Moderate, normal conversation</td>
+        </tr>
+        <tr>
+          <td>61-80 dB</td>
+          <td>Loud, can be annoying</td>
+        </tr>
+        <tr>
+          <td>81-100 dB</td>
+          <td>Very loud, potentially harmful</td>
+        </tr>
+        <tr>
+          <td>101+ dB</td>
+          <td>Extremely loud, harmful</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Auditorium button -->
+    <a href="/UX design/html/aula.html" class="auditorium-button">Go to Auditorium</a>
+
+    <!-- Back button -->
+    <a href="/UX design/html/home.html" class="back-button">Back</a>
+  </div>
+
+  <script>
+    function measureDecibel() {
+      const decibelValue = Math.floor(Math.random() * 101); // Example value between 0 and 100
+      document.getElementById('decibel-value').textContent = `${decibelValue} dB`;
+      document.getElementById('decibel-bar').style.width = `${decibelValue}%`;
+      document.getElementById('decibel-bar').style.backgroundColor = getColor(decibelValue);
+    }
+
+    function getColor(value) {
+      if (value <= 30) return '#4caf50'; // Green
+      if (value <= 60) return '#ffeb3b'; // Yellow
+      if (value <= 80) return '#ff9800'; // Orange
+      return '#f44336'; // Red
+    }
+
+    setInterval(measureDecibel, 2000); // Measure decibel every 2 seconds
+  </script>
+</body>
+</html>

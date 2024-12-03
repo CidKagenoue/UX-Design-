@@ -176,3 +176,23 @@ button {
 .signup-text a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 600px) {
+  .signup-text {
+    font-size: 11px;
+    color: #333;
+  }
+
+  .login-container {
+    width: 360px;
+  }
+
+  .signup-text a {
+    color: #00aaff;
+    text-decoration: none;
+  }
+
+  .signup-text a:hover {
+    text-decoration: underline;
+  }
+}

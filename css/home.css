@@ -133,28 +133,20 @@ body {
   background-color: #005fa3;
 }
 
-/* Mobile Layout Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .home-container {
     width: 90%;
-    padding: 20px;
-  }
-
-  .menu-card {
     padding: 15px;
+    width: 360px;
+    min-height: 500px; /* Adjusted for smaller screens */
   }
 
-  .menu-icon {
-    width: 35px;
-    height: 35px;
+  .user-avatar {
+    width: 100px;
+    height: 100px;
   }
 
-  .menu-text {
-    font-size: 16px;
-  }
-
-  .back-button {
-    font-size: 14px;
-    padding: 8px 16px;
+  .header {
+    margin-bottom: 20px;
   }
 }

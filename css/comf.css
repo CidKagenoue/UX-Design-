@@ -114,27 +114,33 @@ body {
   background-color: #005fa3;
 }
 
-/* Mobile-Specific Adjustments */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .home-container {
-      width: 95%;
-      margin: 10px;
-      padding: 20px;
+    width: 360px;
+    margin: 10px;
+    padding: 20px;
+    min-height: 400px; /* Adjusted for shorter length */
   }
 
   .control-icon,
   .menu-icon {
-      width: 12vw; /* Slightly larger for better visibility on small screens */
-      max-width: 50px;
+    width: 15vw; /* Slightly larger for better visibility on small screens */
+    max-width: 50px;
   }
 
   .control-label,
   .menu-text {
-      font-size: 14px; /* Smaller text for compact screens */
+    font-size: 14px; /* Smaller text for compact screens */
   }
 
   .back-button {
-      font-size: 14px;
-      padding: 8px 16px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .controls-container,
+  .button-container {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    gap: 10px; /* Smaller gaps for compact layouts */
   }
 }

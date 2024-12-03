@@ -128,17 +128,25 @@ body {
   }
   
   /* Mobile Layout Adjustments */
-  @media (max-width: 768px) {
-    .container {
-      width: 90%;
-    }
-  
-    .time-button {
-      padding: 12px 25px;
-    }
-  
-    #result-message {
-      font-size: 16px;
-    }
+@media (max-width: 600px) {
+  .container {
+    width: 360px;
+    margin: 10px;
+    padding: 20px;
   }
+
+  .time-button {
+    padding: 10px 20px;
+    font-size: 14px; /* Adjusted font size for better fit */
+  }
+
+  #result-message {
+    font-size: 14px; /* Smaller font size for compact screens */
+  }
+
+  .back-button {
+    font-size: 14px; /* Smaller font size for compact screens */
+    padding: 8px 16px;
+  }
+}
   

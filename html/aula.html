@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula Systeem</title>
+  <link rel="stylesheet" href="/UX design/css/aula.css">
+</head>
+<body>
+  <div class="home-container">
+    <header class="header">
+      <h1 class="title">Aula Systeem</h1>
+      <img src="/UX design/images/boycool-profielfoto_946262-2.avif" alt="User Avatar" class="avatar">
+    </header>
+
+    <!-- Seating Arrangement -->
+    <div class="seating-container">
+      <div class="seats-grid">
+        <!-- Generate seats dynamically -->
+        <script>
+          const seatInfo = [
+            { name: 'John Doe', info: 'Seat 1' },
+            { name: 'Jane Smith', info: 'Seat 2' },
+            { name: 'Kevin DeJong', info: 'Seat 3' },
+            { name: 'Leo dicaprio', info: 'Seat 4' },
+            { name: 'Ali Mo', info: 'Seat 5' },
+            { name: 'Melanie DeOud', info: 'Seat 6' },
+            // Add more seat info as needed
+          ];
+
+          for (let i = 0; i < 50; i++) {
+            const seat = document.createElement('div');
+            seat.className = 'seat';
+            seat.dataset.name = seatInfo[i % seatInfo.length].name;
+            seat.dataset.info = seatInfo[i % seatInfo.length].info;
+            seat.innerHTML = `<span class="tooltip">${seatInfo[i % seatInfo.length].name}<br>${seatInfo[i % seatInfo.length].info}</span>`;
+            document.querySelector('.seats-grid').appendChild(seat);
+          }
+        </script>
+      </div>
+      <div class="stage">Stage</div>
+    </div>
+
+    <!-- Buttons Section -->
+    <div class="button-section">
+      <button class="action-button" onclick="alert('Docent is verwittigd!')">Verwittig docent</button>
+      <button class="action-button" onclick="alert('Vraag stilte!')">Vraag stilte</button>
+      <a href="/UX design/html/home.html" class="action-button">Terug</a>
+    </div>
+  </div>
+</body>
+</html>
