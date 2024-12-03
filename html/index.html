@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link rel="stylesheet" href="/UX design/css/style.css">
+  <link rel="stylesheet" href="/UX-design/css/style.css">
 </head>
 <body>
   <div class="login-container">
     <div class="login-header">
       <div class="avatar">
-        <img src="/UX design/images/boycool-profielfoto_946262-2.avif" alt="User Avatar">
+        <img src="/UX-design/images/boycool-profielfoto_946262-2.avif" alt="User Avatar">
       </div>
       <h1 class="title">Welcome back</h1>
       <p class="subtitle">Sign in to continue your journey</p>
@@ -18,11 +18,11 @@
     <form id="loginForm" class="login-form">
       <div class="input-group">
         <input type="text" id="username" placeholder="username/s-nr" required>
-        <img src="/UX design/images/email.png" class="input-icon" alt="Email Icon">
+        <img src="/UX-design/images/email.png" class="input-icon" alt="Email Icon">
       </div>
       <div class="input-group">
         <input type="password" id="password" name="password" placeholder="Password" required>
-        <img src="/UX design/images/padlock.png" class="input-icon" alt="Lock Icon">
+        <img src="/UX-design/images/padlock.png" class="input-icon" alt="Lock Icon">
       </div>
       <div class="options">
         <label>
@@ -34,7 +34,7 @@
       <button type="button" id="loginButton">Sign in</button>
       <p class="alternative">Or continue with</p>
       <div class="social-buttons">
-        <button class="social-button google">Google</button>
+        <button class="social-button google" id="googleButton">Google</button>
         <button class="social-button github">GitHub</button>
         <button class="social-button twitter">Twitter</button>
       </div>
@@ -48,17 +48,18 @@
       
       const username = document.getElementById("username").value;
       const password = document.getElementById("password").value;
-  
+
       if (username && password) {
         localStorage.setItem("userName", username);
-        window.location.href = "/UX design/html/home.html";
+        window.location.href = "/UX-design/html/home.html";
       } else {
         alert("Please fill in both email and password.");
       }
     });
+
+    document.getElementById("googleButton").addEventListener("click", function () {
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    });
   </script>
 </body>
 </html>
-
-
-
