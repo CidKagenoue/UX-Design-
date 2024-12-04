@@ -3,38 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Window Voting</title>
+  <title>Curtain Voting</title>
   <link rel="stylesheet" href="/UX-design/css/gordijn.css">
 </head>
 <body>
-    <div class="home-container">
-        <div class="header">
-          <img src="/UX-design/images/boycool-profielfoto_946262-2.avif" alt="User Avatar" class="avatar">
-          <h1>Curtain Voting</h1>
-        </div>
-      
-        <!-- Voting Graph -->
-        <div class="chart">
-          <div class="bar-container">
-            <div class="bar yes-bar" style="height: 0%;">Yes: 0</div>
-            <div class="bar no-bar" style="height: 0%;">No: 0</div>
-          </div>
-        </div>
-      
-        <!-- Voting Result Display -->
-        <div class="result">
-          <p id="result-message">Please vote above.</p>
-        </div>
-      
-        <!-- Voting Section (Moved Below Graph) -->
-        <div class="voting-options">
-          <button class="vote-button" onclick="vote('yes')">Yes</button>
-          <button class="vote-button" onclick="vote('no')">No</button>
-        </div>
-      
-        <!-- Back button -->
-        <a href="/UX-design/html/comf.html" class="back-button">Back</a>
+  <div class="home-container">
+    <header class="header">
+      <h1>Curtain Voting</h1>
+      <img src="/UX-design/images/boycool-profielfoto_946262-2.avif" alt="User Avatar" class="avatar" onclick="window.location.href='/UX-design/html/profile.html'">
+    </header>
+
+    <!-- Voting Graph -->
+    <div class="chart">
+      <div class="bar-container">
+        <div class="bar yes-bar" style="height: 0%;">Yes: 0</div>
+        <div class="bar no-bar" style="height: 0%;">No: 0</div>
       </div>
+    </div>
+
+    <!-- Voting Result Display -->
+    <div class="result">
+      <p id="result-message">Please vote above.</p>
+    </div>
+
+    <!-- Voting Section (Moved Below Graph) -->
+    <div class="voting-options">
+      <button class="vote-button" onclick="vote('yes')">Yes</button>
+      <button class="vote-button" onclick="vote('no')">No</button>
+    </div>
+
+    <!-- Back button -->
+    <a href="/UX-design/html/comf.html" class="back-button">Back</a>
+  </div>
   <script>
     let yesVotes = 0;
     let noVotes = 0;

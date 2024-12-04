@@ -30,6 +30,8 @@ body {
   border-radius: 50%;
   background: #e0f7fa;
   padding: 5px;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .title {

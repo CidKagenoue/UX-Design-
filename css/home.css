@@ -46,6 +46,7 @@ body {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .user-avatar img {
